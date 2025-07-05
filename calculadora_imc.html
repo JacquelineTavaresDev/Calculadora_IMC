@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="calculadora_imc.css">
+    <script src="calculadora_imc.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Bem Vindo a Calculadora de IMC Corporal</h1>
+    </header>
+    <main>
+        <p>O IMC (Índice de Massa Corporal) é usada para classificar o estado nutricional de um indivíduo com base no seu peso e altura.</p>
+        
+        <label for="peso">Peso(kg): </label>
+        <input type="number" id="peso">
+        
+        <label for="altura">Altura(m): </label>
+        <input type="number" id="altura" step="0.01">
+        
+        <button onclick="imc()">Calcular</button>
+        
+        <p id="resultado">Valor do IMC: </p>
+
+        <p id="resultadoclassificacao"></p>
+    </main>
+</body>
+</html>
